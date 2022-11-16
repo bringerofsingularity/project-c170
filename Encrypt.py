@@ -7,39 +7,10 @@ key = input("Enter a encrypt key of your Choice (at lease 8 Numbers long): ")
 encrypt =''
 
 for i in message:
-  position=alphabet.find(i)
-  newposition=(position+ int())%94
-  encrypt+=alphabet [newposition]
+  position = alphabet.find(i)
+  newposition = (position + int(key))%94
+  encrypt += alphabet[newposition]
 output = (encrypt)
 
-
-for i in message:
-  position=alphabet.find(i)
-  newposition=(position+ int(key) )%94
-  encrypt+=alphabet [newposition]
-output = (encrypt)
-
-
-for i in message:
-  position=alphabet.find(i)
-  newposition=(position+ int(key) )%94
-  encrypt+=alphabet [newposition]
-output = (encrypt)
-
-for i in message:
-  position=alphabet.find(i)
-  newposition=(position+ int(key) )%94
-  encrypt+=alphabet [newposition]
-output = ()
-
-
-
-
-
-
-
-
-
-
-print ('Encrypted Message: '+ (output) )
-print ('Encryption Key: '+ (key) )
+print('Encrypted Message: ' + (output))
+print('Encrytion Key: ' + (key))
